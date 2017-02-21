@@ -5,8 +5,13 @@ const baseUrl = 'http://conjes.cactus2000.de/showverb.php';
 function getList(verb) {
   return new Promise((resolve, reject) => {
     jsdom.env({
-      url: `${baseUrl}?verb=${verb}`,
-      done: function (err, window) {
+      url: `xxx${baseUrl}?verb=${verb}`,
+      done: (err, window) => {
+
+        if (err) {
+          reject(err.toString());
+        }
+
         const doc = window.document;
 
         const output = {};
