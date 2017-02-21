@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "intent": "Konjugiere",
+      "slots": [
+        {
+          "name": "VERB",
+          "type": "LIST_OF_VERBS"
+        }
+      ]
+    }
+  ]
+}

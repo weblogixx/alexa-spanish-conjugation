@@ -1,3 +1,4 @@
+'use strict';
 const jsdom = require('jsdom');
 
 const baseUrl = 'http://conjes.cactus2000.de/showverb.php';
@@ -5,9 +6,8 @@ const baseUrl = 'http://conjes.cactus2000.de/showverb.php';
 function getList(verb) {
   return new Promise((resolve, reject) => {
     jsdom.env({
-      url: `xxx${baseUrl}?verb=${verb}`,
+      url: `${baseUrl}?verb=${verb}`,
       done: (err, window) => {
-
         if (err) {
           reject(err.toString());
         }

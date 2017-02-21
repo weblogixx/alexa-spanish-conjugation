@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/weblogixx/alexa-spanish-conjugation#readme",
   "dependencies": {
+    "alexa-sdk": "^1.0.7",
     "jquery": "^3.1.1",
     "jsdom": "^9.11.0",
     "winston": "^2.3.1"
